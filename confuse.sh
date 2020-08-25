@@ -8,6 +8,7 @@ HEAD_FILE="$PROJECT_DIR/$PROJECT_NAME/ObConfuseDef.h"
 
 # 加前缀防止产生以数字开头的md5值
 function md5(){
+    # 其中"$1yan"中的"yan"为md5中的盐，可自行修改。
     md5_str=`echo -n "$1yan" | md5sum | cut -d ' ' -f 1`
     echo "ET_"$md5_str
 };
