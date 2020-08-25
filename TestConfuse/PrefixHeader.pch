@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  TestConfuse
+//
+//  Created by 申铭 on 2020/8/19.
+//  Copyright © 2020 eetrust. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 写在最上面的位置
+#ifdef DEBUG
+// #import "ObConfuseDef.h"
+#else
+#import "ObConfuseDef.h"
+#endif
+
+#endif /* PrefixHeader_pch */
